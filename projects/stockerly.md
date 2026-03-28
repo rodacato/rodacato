@@ -7,6 +7,7 @@
 **Tags:** fintech, rails, ddd, hotwire, portfolio
 
 
+
 ## Tagline
 
 Tu terminal de mercados, portafolio y alertas — sin pagar Bloomberg

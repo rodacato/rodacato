@@ -1,19 +1,32 @@
 # SheLLM
 
 **Repo:** https://github.com/rodacato/SheLLM
-**Stack:** Node.js 22 · Express 5 · SQLite
-**Status:** v0.1
+**Stack:** Node.js 22, Express 5, SQLite, Playwright
+**Status:** active
+**Category:** utility
+**Tags:** ai, llm, api, self-hosted
+**Version:** 0.5.0
 
-## What it is
 
+## Tagline
 
-## Architecture decisions
-<!-- Dual-compatible endpoints, provider health, key management, tradeoffs -->
+Your LLM subscriptions as a single REST API
 
+## Description
+
+Unifies Claude, Gemini, Codex and Cerebras under an OpenAI-compatible endpoint — wrapping CLI subscriptions you already pay for instead of burning API tokens. Self-hosted, Express + SQLite, with an admin dashboard.
 
 ## Screenshots
-<!-- ![Description](../assets/screenshots/shellm-xxx.png) -->
+![SheLLM screenshot](../assets/screenshots/SheLLM-screenshot.png)
+![Landing page with feature overview](../assets/screenshots/SheLLM-landing.png)
+![Interactive playground for testing prompts](../assets/screenshots/SheLLM-dashboard-playground.png)
+![Live streaming log terminal](../assets/screenshots/SheLLM-dashboard-terminal.png)
+![Filterable request logs with stats](../assets/screenshots/SheLLM-dashboard-logs.png)
+![API key management with audit log](../assets/screenshots/SheLLM-dashboard-keys.png)
+![Provider status and model registry](../assets/screenshots/SheLLM-dashboard-models.png)
 
+## Architecture decisions
+<!-- Add manually: DDD patterns, tradeoffs, why this approach -->
 
 ## What I learned
-
+<!-- Add manually: gotchas, surprises, things worth sharing -->

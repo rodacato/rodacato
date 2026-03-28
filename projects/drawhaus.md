@@ -5,6 +5,7 @@
 **Status:** activo
 **Category:** producto
 **Tags:** excalidraw, collaboration, self-hosted, docker, diagramming
+
 **URL:** https://drawhaus.notdefined.dev
 
 ## Tagline
