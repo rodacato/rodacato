@@ -17,7 +17,7 @@ Dibuja diagramas en equipo sin depender de servicios externos
 Alternativa self-hosted a Excalidraw con colaboracion en tiempo real, multi-escenas, comentarios y templates. TypeScript, React y Express con PostgreSQL. Lo hice porque queria diagramar sin que mis datos vivieran en servidores de terceros.
 
 ## Screenshots
-![drawhaus screenshot](../assets/screenshots/drawhaus-screenshot.png)
+![drawhaus screenshot](../assets/screenshots/drawhaus/screenshot.png)
 
 ## Architecture decisions
 <!-- Add manually: DDD patterns, tradeoffs, why this approach -->

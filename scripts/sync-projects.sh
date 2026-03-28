@@ -11,10 +11,11 @@ OWNER="rodacato"
 ASSETS_DIR="$(cd "$(dirname "$0")/.." && pwd)/assets/screenshots"
 PROJECTS_DIR="$(cd "$(dirname "$0")/.." && pwd)/projects"
 
-mkdir -p "$ASSETS_DIR"
-
 for repo in "${REPOS[@]}"; do
   echo "--- $repo ---"
+  repo_lower=$(echo "$repo" | tr '[:upper:]' '[:lower:]')
+  repo_assets="$ASSETS_DIR/$repo_lower"
+  mkdir -p "$repo_assets"
 
   # Fetch .notdefined.yml via GitHub API
   yml=$(gh api "repos/$OWNER/$repo/contents/.notdefined.yml" --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || true)
@@ -52,7 +53,7 @@ for repo in "${REPOS[@]}"; do
   if [[ -n "$screenshot_path" ]]; then
     screenshot_url="https://raw.githubusercontent.com/$OWNER/$repo/refs/heads/$default_branch/$screenshot_path"
     ext="${screenshot_path##*.}"
-    dest="$ASSETS_DIR/${repo}-screenshot.${ext}"
+    dest="$repo_assets/screenshot.${ext}"
 
     echo "  Downloading main screenshot → $dest"
     if curl -fsSL "$screenshot_url" -o "$dest" 2>/dev/null; then
@@ -72,7 +73,7 @@ for repo in "${REPOS[@]}"; do
         extra_url="https://raw.githubusercontent.com/$OWNER/$repo/refs/heads/$default_branch/$extra_path"
         extra_ext="${extra_path##*.}"
         extra_name=$(basename "$extra_path" ".$extra_ext")
-        extra_dest="$ASSETS_DIR/${repo}-${extra_name}.${extra_ext}"
+        extra_dest="$repo_assets/${extra_name}.${extra_ext}"
 
         echo "  Downloading screenshot: $extra_name → $extra_dest"
         if curl -fsSL "$extra_url" -o "$extra_dest" 2>/dev/null; then
@@ -85,7 +86,7 @@ for repo in "${REPOS[@]}"; do
   fi
 
   # Update project markdown if it exists
-  project_file="$PROJECTS_DIR/$(echo "$repo" | tr '[:upper:]' '[:lower:]').md"
+  project_file="$PROJECTS_DIR/${repo_lower}.md"
   if [[ -f "$project_file" ]]; then
     echo "  📝 Updating $project_file with .notdefined.yml data"
 
@@ -105,7 +106,7 @@ for repo in "${REPOS[@]}"; do
     screenshots_section=""
     if [[ -n "$screenshot_path" ]]; then
       ext="${screenshot_path##*.}"
-      screenshots_section="![${repo} screenshot](../assets/screenshots/${repo}-screenshot.${ext})"
+      screenshots_section="![${repo} screenshot](../assets/screenshots/${repo_lower}/screenshot.${ext})"
     fi
     if [[ "$extra_count" -gt 0 ]]; then
       for i in $(seq 0 $((extra_count - 1))); do
@@ -115,7 +116,7 @@ for repo in "${REPOS[@]}"; do
           extra_ext="${extra_path##*.}"
           extra_name=$(basename "$extra_path" ".$extra_ext")
           screenshots_section="${screenshots_section}
-![${extra_alt:-$extra_name}](../assets/screenshots/${repo}-${extra_name}.${extra_ext})"
+![${extra_alt:-$extra_name}](../assets/screenshots/${repo_lower}/${extra_name}.${extra_ext})"
         fi
       done
     fi
@@ -159,5 +160,5 @@ EOF
   echo ""
 done
 
-echo "Done. Screenshots in: $ASSETS_DIR"
+echo "Done. Screenshots in: $ASSETS_DIR/<project>/"
 echo "Review updated project files in: $PROJECTS_DIR"

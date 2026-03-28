@@ -17,7 +17,7 @@ Tu terminal de mercados, portafolio y alertas — sin pagar Bloomberg
 Plataforma fintech open source para seguir tendencias del mercado, administrar portafolios, configurar alertas y revisar earnings. Hecho con Rails 8, PostgreSQL, Hotwire y Tailwind CSS 4. Arquitectura DDD + Hexagonal con 6 bounded contexts y eventos de dominio.
 
 ## Screenshots
-![stockerly screenshot](../assets/screenshots/stockerly-screenshot.png)
+![stockerly screenshot](../assets/screenshots/stockerly/screenshot.png)
 
 ## Architecture decisions
 <!-- Add manually: DDD patterns, tradeoffs, why this approach -->

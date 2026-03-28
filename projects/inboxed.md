@@ -17,7 +17,7 @@ Atrapa los emails de tu app y deja que tu agente de IA los lea
 Servidor SMTP self-hosted que captura emails de prueba y los expone via REST API, dashboard web y servidor MCP. Tus agentes de IA pueden extraer OTPs y links de verificación sin salir de su contexto. Hecho con Rails 8, Svelte 5 y Node.js.
 
 ## Screenshots
-![inboxed screenshot](../assets/screenshots/inboxed-screenshot.png)
+![inboxed screenshot](../assets/screenshots/inboxed/screenshot.png)
 
 ## Architecture decisions
 <!-- Add manually: DDD patterns, tradeoffs, why this approach -->
