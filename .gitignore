@@ -1,0 +1,58 @@
+# ==========================
+# LLM / AI Agent configs
+# ==========================
+
+# Claude Code
+.claude/
+
+# Cursor
+.cursor/
+.cursorules
+.cursorrules
+.cursorignore
+
+# Windsurf (Codeium)
+.windsurf/
+.windsurfrules
+.codeiumrc
+
+# GitHub Copilot
+.copilot/
+.github/copilot-instructions.md
+
+# Aider
+.aider*
+.aiderignore
+
+# Continue.dev
+.continue/
+.continuerc.json
+
+# Cline / Roo Code
+.cline/
+.clinerules
+.clineignore
+.roo/
+.roorules
+.roomodes
+
+# Amazon Q
+.amazonq/
+
+# Tabnine
+.tabnine_root
+
+# Codeium
+.codeium/
+
+# Bolt
+.bolt/
+
+# Devin
+.devin/
+
+# Augment
+.augment/
+augment-guidelines.md
+
+# Generic agent/prompt files (tracked in this repo — they ARE the content)
