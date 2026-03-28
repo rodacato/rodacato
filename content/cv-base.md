@@ -1,0 +1,91 @@
+# CV Base
+
+<!--
+Base CV to customize per position. Pulls from linkedin/experience.md and projects/.
+When targeting a specific role, copy this file and tailor the emphasis.
+-->
+
+## Adrian Castillo
+
+**Backend & Platform Engineer | Domain-Driven Design | AI Infrastructure**
+Colima, Mexico · rodacato@gmail.com · github.com/rodacato · linkedin.com/in/rodacato · notdefined.dev
+
+---
+
+## Summary
+
+Backend-heavy engineer with 10+ years shipping production systems — fintech, healthcare, eCommerce, and AI infrastructure. Core stack: Ruby/Rails, Node.js, JS/TS, with growing Rust and Python. Designs systems around DDD, hexagonal architecture, and event-driven patterns. Builds AI/LLM tooling, not just uses it. 1,800+ automated tests across current open-source projects.
+
+---
+
+## Selected Experience
+
+### Monato — Senior Engineer Consultant
+Mar 2025 – Jun 2025
+
+<!-- TODO: Add details -->
+
+### Invoy — Senior Full Stack Engineer
+Sep 2019 – Mar 2025 · Irvine, CA (Remote)
+
+- Scaled platform to 10x user traffic — Sinatra/Ruby, React, AWS/Terraform
+- Migrated from Heroku to AWS, improving performance and cost efficiency
+- Evolved architecture: independent services → microservices → consolidated scalable monolith
+- Implemented HIPAA-compliant safeguards for sensitive medical data
+
+### michelada.io — Senior Software Engineer
+Feb 2018 – Sep 2019 · Colima, Mexico
+
+- Led team of 5 developers building a cryptocurrency exchange
+- RabbitMQ integration for order book processing
+- Established engineering culture: reading clubs, internal training, blog posts
+
+### Pay By Group — Senior Software Engineer
+Apr 2016 – May 2018 · San Francisco Bay Area
+
+- Led transition to API-first model for group payment integrations
+- Migrated payments to Stripe Connected Accounts
+- Implemented Domain-Driven Design for payment domain boundaries
+
+### Crowd Interactive — Senior Software Engineer
+Mar 2013 – Oct 2015 · Colima, Mexico
+
+- Led team for Igobono, high-demand social marketplace
+- Built API in Sinatra & Angular for Red Bull's photo-sharing platform
+- Designed scalable architectures across Heroku & Engine Yard
+
+### Freshout — Backend & DevOps Engineer
+Nov 2010 – Mar 2013 · Guadalajara, Mexico
+
+- Built Rails backends for eCommerce, marketing, and social platforms
+- Managed infrastructure: Engine Yard, Rackspace — config, security, deploys
+- CI pipelines with RSpec
+
+### Earlier roles
+2007–2010 · Crowd Interactive (PHP/Flex → Rails transition), Secretaría de Salud (medical records system)
+
+---
+
+## Selected Projects
+
+| Project | What it demonstrates |
+|---------|---------------------|
+| **Stockerly** — Fintech platform (Rails 8, PostgreSQL, dry-rb) | 6 DDD bounded contexts, event-driven market data ingestion, multi-provider API gateways |
+| **SheLLM** — LLM API gateway (Node.js, Express 5) | Dual OpenAI/Anthropic-compatible endpoints, usage tracking, provider health monitoring |
+| **KenoBot** — AI assistant (Node.js, Grammy) | 4-tier cognitive memory system, consciousness gateway, self-improvement via GitHub PRs |
+| **Polyglot Purgatory** — Multi-language monorepo | Python, Rust, Go, TS, Ruby — devcontainer isolation, mentor personas |
+
+---
+
+## Education
+
+**Universidad de Colima** — B.E. Telemática · 2003–2007
+
+## Awards
+
+- Rails Rumble 2015 Winner
+
+## Languages
+
+- Spanish (Native)
+- English (Professional Working)
