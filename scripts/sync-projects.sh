@@ -8,13 +8,13 @@ set -euo pipefail
 
 REPOS=("stockerly" "kenobot" "SheLLM" "drawhaus" "dojo" "inboxed")
 OWNER="rodacato"
-ASSETS_DIR="$(cd "$(dirname "$0")/.." && pwd)/assets/screenshots"
+ASSETS_DIR="$(cd "$(dirname "$0")/.." && pwd)/assets"
 PROJECTS_DIR="$(cd "$(dirname "$0")/.." && pwd)/projects"
 
 for repo in "${REPOS[@]}"; do
   echo "--- $repo ---"
   repo_lower=$(echo "$repo" | tr '[:upper:]' '[:lower:]')
-  repo_assets="$ASSETS_DIR/$repo_lower"
+  repo_assets="$ASSETS_DIR/$repo_lower/screenshots"
   mkdir -p "$repo_assets"
 
   # Fetch .notdefined.yml via GitHub API
@@ -106,7 +106,7 @@ for repo in "${REPOS[@]}"; do
     screenshots_section=""
     if [[ -n "$screenshot_path" ]]; then
       ext="${screenshot_path##*.}"
-      screenshots_section="![${repo} screenshot](../assets/screenshots/${repo_lower}/screenshot.${ext})"
+      screenshots_section="![${repo} screenshot](../assets/${repo_lower}/screenshots/screenshot.${ext})"
     fi
     if [[ "$extra_count" -gt 0 ]]; then
       for i in $(seq 0 $((extra_count - 1))); do
@@ -116,7 +116,7 @@ for repo in "${REPOS[@]}"; do
           extra_ext="${extra_path##*.}"
           extra_name=$(basename "$extra_path" ".$extra_ext")
           screenshots_section="${screenshots_section}
-![${extra_alt:-$extra_name}](../assets/screenshots/${repo_lower}/${extra_name}.${extra_ext})"
+![${extra_alt:-$extra_name}](../assets/${repo_lower}/screenshots/${extra_name}.${extra_ext})"
         fi
       done
     fi
@@ -160,5 +160,5 @@ EOF
   echo ""
 done
 
-echo "Done. Screenshots in: $ASSETS_DIR/<project>/"
+echo "Done. Screenshots in: $ASSETS_DIR/<project>/screenshots/"
 echo "Review updated project files in: $PROJECTS_DIR"
