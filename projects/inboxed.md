@@ -1,23 +1,23 @@
 # Inboxed
 
 **Repo:** https://github.com/rodacato/inboxed
-**Stack:** Ruby
-**Status:** activo
-**Category:** producto
-**Tags:** smtp, testing, mcp, rails, docker
-
+**Stack:** Rails 8, PostgreSQL 16, Svelte 5, Tailwind CSS 4, ActionCable, Solid Queue, dry-rb, Kamal, Docker
+**Status:** archived
+**Category:** product
+**Tags:** smtp, testing, mcp, developer-tools, self-hosted
+**Version:** 0.3.0
 **URL:** https://inboxed.notdefined.dev
 
 ## Tagline
 
-Atrapa los emails de tu app y deja que tu agente de IA los lea
+Catch emails, webhooks, and HTTP requests before they hit production
 
 ## Description
 
-Servidor SMTP self-hosted que captura emails de prueba y los expone via REST API, dashboard web y servidor MCP. Tus agentes de IA pueden extraer OTPs y links de verificación sin salir de su contexto. Hecho con Rails 8, Svelte 5 y Node.js.
+Self-hosted dev inbox with SMTP capture, webhook/HTTP catchers, and an MCP server so AI agents can read your test emails too. Built with Rails 8 and Svelte 5 because I got tired of MailHog dying and RequestBin disappearing.
 
 ## Screenshots
-![inboxed screenshot](../assets/screenshots/inboxed/screenshot.png)
+![inboxed screenshot](../assets/inboxed/screenshots/screenshot.png)
 
 ## Architecture decisions
 <!-- Add manually: DDD patterns, tradeoffs, why this approach -->
