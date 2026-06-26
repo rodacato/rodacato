@@ -1,9 +1,12 @@
 # Work Experience
 
 ## Monato
-**Senior Engineer Consultant** | Mar 2025 – Jun 2025 (4 months)
+**Senior Engineer Consultant** | Mar 2025 – Mar 2026 (1 year)
 
-<!-- TODO: Add details — what did you build/consult on? Stack? Impact? -->
+- Functional DDD with Rails + dry-rb, helping a new team adopt the paradigm
+- Explicit contracts and railway-oriented flows over implicit, exception-driven code
+
+**Stack:** Ruby, Rails, dry-rb
 
 ---
 
