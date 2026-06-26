@@ -1,9 +1,11 @@
 ## Hey there! I'm Adrian Castillo 👋
 
 **Backend & Platform Engineer** | **Domain-Driven Design** | **AI Infrastructure**
-*17+ years shipping production systems — APIs, fintech, healthcare, event-driven architectures*
+*17+ years shipping production systems — APIs, fintech, healthcare, IoT/telematics, event-driven architectures*
 
 Based in Colima, México. I design systems around clear domain boundaries, explicit contracts, and boring infrastructure. I'd rather ship a reliable API than a clever one.
+
+🛠️ **Currently** — Senior Software Engineer (consultant) at **Encontrack**: Rust real-time device communications for a 200k+ vehicle fleet-tracking platform, plus a Rails inventory system and a React Native + Node product.
 
 📝 I write about architecture, technical decisions, and AI experiments at **[notdefined.dev](https://notdefined.dev)** · [CV](https://notdefined.dev/cv)
 
@@ -26,6 +28,7 @@ Based in Colima, México. I design systems around clear domain boundaries, expli
 
 - **Domain-Driven Design** (functional and tactical) with hexagonal architecture and explicit contracts
 - **Event-driven systems** — bounded contexts, railway-oriented flows, circuit breakers, rate limiting
+- **Rust in production** — real-time device communications at IoT scale (200k+ vehicles)
 - **AI infrastructure, not just usage** — Dojo's LLM sensei and Stockerly's multi-provider gateway; also built [SheLLM](https://github.com/rodacato/SheLLM) (unified LLM REST API) and [KenoBot](https://github.com/rodacato/kenobot) (cognitive-memory assistant)
 - **Quality discipline** — CI gates, self-hosted SonarQube, e2e tests, security scanning
 - **Self-hosted infra** — Kamal on Hetzner, Cloudflare Tunnel, Tailscale

@@ -1,5 +1,19 @@
 # Work Experience
 
+## Encontrack
+**Senior Software Engineer (Consultant)** | Jun 2025 – Present · Remote
+
+Core software team for a vehicle-tracking / telematics platform covering 200,000+ vehicles across México, maintaining the device-communications and message-processing systems.
+
+- **iotHub** — Rust processing layer that ingests and handles real-time device communications
+- **DeviceManager** (Rails) — equipment inventory and command dispatch; led the team building it
+- **Encontrol** — React Native apps with a Node/Express backend; lead engineer
+- DeviceManager and Encontrol started as prototypes and consolidated into production systems/products by proving their value in daily operations
+
+**Stack:** Rust, Ruby on Rails, Node.js, Express, React Native
+
+---
+
 ## Monato
 **Senior Engineer Consultant** | Mar 2025 – Mar 2026 (1 year)
 
