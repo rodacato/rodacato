@@ -32,7 +32,7 @@ When something changes, update it in the canonical place first, then mirror:
 |---|---|---|
 | A flagship project (add / remove / rename / new tagline) | `src/content/projects/<slug>.md` | The one-line row in `README.md` → *What I'm Building* |
 | Career / experience / a new role | `src/data/cv.ts` (drives `/cv` and `/about`) | `linkedin/experience.md` if still used for per-role tailoring |
-| Stack / tooling / infra | `src/pages/uses.astro` (`/uses`) | `README.md` → *Tech Stack* / *How I Work* if it's a headline change |
+| Stack / tooling / infra | the stack section in `src/pages/about.astro` (`/about`) | `README.md` → *Tech Stack* / *How I Work* if it's a headline change |
 | Years of experience, lane, headline | `src/data/cv.ts` + `src/data/site.ts` | `README.md` header line + `PROFILE.md` |
 
 **What not to forget / not to do:**
