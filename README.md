@@ -1,48 +1,34 @@
 ## Hey there! I'm Adrian Castillo 👋
 
 **Backend & Platform Engineer** | **Domain-Driven Design** | **AI Infrastructure**
-*10+ years shipping production systems — APIs, fintech, event-driven architectures*
+*17+ years shipping production systems — APIs, fintech, healthcare, event-driven architectures*
 
-Based in Colima, Mexico. I design systems around clear domain boundaries, explicit contracts, and boring infrastructure. I'd rather ship a reliable API than a clever one.
+Based in Colima, México. I design systems around clear domain boundaries, explicit contracts, and boring infrastructure. I'd rather ship a reliable API than a clever one.
 
----
-
-### Selected Experience
-
-Advocate of **clean architectures**, **Domain-Driven Design**, **event-driven systems**, and **purposeful, intentional code**.
-
-- Architected **event-driven backend systems** with bounded contexts, railway-oriented programming, and hexagonal architecture
-- Designed and shipped **RESTful and GraphQL APIs** serving real-time data pipelines with circuit breakers, rate limiting, and key rotation
-- Built **multi-provider LLM infrastructure** — unified interfaces, cost management, provider health monitoring
-- **1,800+ automated tests** across current open-source projects with security scanning (Brakeman, bundler-audit, secret detection)
+📝 I write about architecture, technical decisions, and AI experiments at **[notdefined.dev](https://notdefined.dev)** · [CV](https://notdefined.dev/cv)
 
 ---
 
 ### What I'm Building
 
-| Project | Stack | Status | Description |
-|---------|-------|--------|-------------|
-| 🔮 [**Stockerly**](https://github.com/rodacato/stockerly) | Rails 8 · PostgreSQL · Hotwire · dry-rb | `active` | Fintech platform — 6 DDD bounded contexts, event-driven market data ingestion, multi-provider API gateways (Polygon.io, CoinGecko, Yahoo Finance) |
-| 🤖 [**KenoBot**](https://github.com/rodacato/kenobot) | Node.js 22 · SQLite · Grammy | `v0.7` | AI assistant with 4-tier memory system, consciousness gateway, swappable LLM providers, and self-improvement via GitHub PRs |
-| 🔌 [**SheLLM**](https://github.com/rodacato/SheLLM) | Node.js 22 · Express 5 · SQLite | `v0.1` | Unified REST API for LLM providers — dual OpenAI/Anthropic-compatible endpoints, admin dashboard, request logging & key management |
-| 🎨 [**Drawhaus**](https://github.com/rodacato/drawhaus) | — | `early dev` | Creative drawing platform — architecture in progress |
-| 🗡️ [**Polyglot Purgatory**](https://github.com/rodacato/polyglot-purgatory) | Python · Rust · Go · TS · Ruby | `active` | Multi-language learning monorepo — devcontainer isolation, mentor personas, cross-language exercises |
+| Project | What it is | Stack | Links |
+|---------|-----------|-------|-------|
+| **Dojo** | Daily practice against vibe coding — pick a kata, no AI, honest feedback from an LLM sensei | TypeScript · React · Hono · PostgreSQL | [repo](https://github.com/rodacato/dojo) · [live](https://dojo.notdefined.dev) |
+| **Drawhaus** | Self-hosted Excalidraw alternative with real-time collaboration | TypeScript · React · Express · PostgreSQL | [repo](https://github.com/rodacato/drawhaus) · [live](https://drawhaus.notdefined.dev) |
+| **Stockerly** | Open-source fintech — DDD with 6 bounded contexts, multi-provider market data gateway | Ruby · Rails · Hotwire · PostgreSQL | [repo](https://github.com/rodacato/stockerly) · [live](https://stockerly.notdefined.dev) |
+| **Mi Feria** | Cycle-aware personal finance, mobile-first — your month doesn't start on the 1st | TypeScript · React Native · Expo · Firebase | [repo](https://github.com/rodacato/mi-feria) · [live](https://mi-feria.notdefined.dev) |
+
+→ Writeups and more at **[notdefined.dev/projects](https://notdefined.dev/projects)**
 
 ---
 
-### AI & LLM Ecosystem
+### How I Work
 
-I'm deep into the AI-augmented development workflow — not just using these tools, but understanding how they fit together and building on top of them.
-
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
-![GitHub Copilot](https://img.shields.io/badge/Copilot-000?style=flat&logo=githubcopilot&logoColor=white)
-![Google AI](https://img.shields.io/badge/Google_AI_Studio-4285F4?style=flat&logo=google&logoColor=white)
-
-- **SheLLM** — multi-provider LLM gateway with unified REST interface, usage tracking, and provider health checks
-- **KenoBot** — 4-tier cognitive memory (working → episodic → semantic → procedural) with nightly consolidation cycles
-- Provider abstraction that treats CLI tools and APIs as equals — same interface, same reliability guarantees
-- Focus on **API ergonomics, cost visibility, and operational reliability** over hype
+- **Domain-Driven Design** (functional and tactical) with hexagonal architecture and explicit contracts
+- **Event-driven systems** — bounded contexts, railway-oriented flows, circuit breakers, rate limiting
+- **AI infrastructure, not just usage** — Dojo's LLM sensei and Stockerly's multi-provider gateway; also built [SheLLM](https://github.com/rodacato/SheLLM) (unified LLM REST API) and [KenoBot](https://github.com/rodacato/kenobot) (cognitive-memory assistant)
+- **Quality discipline** — CI gates, self-hosted SonarQube, e2e tests, security scanning
+- **Self-hosted infra** — Kamal on Hetzner, Cloudflare Tunnel, Tailscale
 
 ---
 
@@ -50,22 +36,13 @@ I'm deep into the AI-augmented development workflow — not just using these too
 
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat&logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/Rails-D30001?style=flat&logo=rubyonrails&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat&logo=nodedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-
----
-
-### What Drives Me
-
-- Exploring **Rust** for performance-critical systems and **Python** for AI & automation
-- Building developer tools that prioritize **usability and reliability** — the best DX is the one you don't notice
-- Treating AI as a **multiplier, not a replacement** — the craft still matters
-- Firm believer that **continuous learning** isn't optional — it's the baseline
 
 ---
 

@@ -8,20 +8,38 @@ When working on this repo, act as a senior career advisor specialized in the sof
 
 ## Repo Structure
 
-This repo is the single source of truth for all professional branding content:
+This repo is the GitHub profile (`README.md`) plus a private scratchpad for branding/CV content. The **live source of truth** for projects and the canonical CV is notdefined.dev (`/projects`, `/cv`). Keep this repo aligned with it; don't duplicate volatile data here.
 
 | Path | Purpose |
 |------|---------|
-| `README.md` | GitHub profile — public-facing, concise |
+| `README.md` | GitHub profile — public-facing, concise; points to notdefined.dev |
 | `PROFILE.md` | Subject context — who the person is, lane, voice, values |
 | `linkedin/headline.md` | LinkedIn headline + about section |
-| `linkedin/experience.md` | Work history — companies, roles, achievements, stack |
+| `linkedin/experience.md` | Work history — raw source for tailoring per role |
 | `linkedin/skills.md` | Skills prioritized by lane |
-| `projects/*.md` | Deep dives per project — architecture, decisions, learnings |
 | `content/bio-short.md` | 2-line bio for talks/podcasts |
 | `content/bio-long.md` | Paragraph bio for articles/blogs |
-| `content/cv-base.md` | Base CV to customize per position |
-| `assets/screenshots/` | Project screenshots and visuals |
+| `content/cv-base.md` | Base CV to tailor per position (canonical CV lives at notdefined.dev/cv) |
+| `assets/<project>/screenshots/` | Project screenshots and visuals |
+
+## Keeping Everything Consistent
+
+**Source-of-truth model:** notdefined.dev is canonical. This repo's `README.md` mirrors a curated slice of it. There is **no automated sync** — it's a short manual ritual, on purpose (the data changes a few times a year; a pipeline isn't worth it). The old `.notdefined.yml` + `sync-projects.sh` system was removed; do **not** rebuild it.
+
+When something changes, update it in the canonical place first, then mirror:
+
+| What changed | 1. Canonical edit (notdefined.dev) | 2. Mirror here |
+|---|---|---|
+| A flagship project (add / remove / rename / new tagline) | `src/content/projects/<slug>.md` | The one-line row in `README.md` → *What I'm Building* |
+| Career / experience / a new role | `src/data/cv.ts` (drives `/cv` and `/about`) | `linkedin/experience.md` if still used for per-role tailoring |
+| Stack / tooling / infra | `src/pages/uses.astro` (`/uses`) | `README.md` → *Tech Stack* / *How I Work* if it's a headline change |
+| Years of experience, lane, headline | `src/data/cv.ts` + `src/data/site.ts` | `README.md` header line + `PROFILE.md` |
+
+**What not to forget / not to do:**
+- Don't duplicate full project descriptions here — link to `notdefined.dev/projects` instead.
+- Keep the README *What I'm Building* table to ~4 active flagships. Older work goes in *How I Work* as a one-liner, not its own row.
+- Don't let facts drift: if you bump tenure or fix a date, grep both repos for the old value.
+- The README can't be an alias of notdefined.dev — GitHub requires the file to live here. It's a pointer, kept thin so it rarely needs touching.
 
 ## Workflow
 
@@ -33,12 +51,12 @@ When asked to review any professional content (README, CV, profile, bio):
 
 When asked to write or rewrite content:
 1. Load subject context from `PROFILE.md`
-2. Pull details from `linkedin/experience.md` and `projects/*.md` as source material
+2. Pull details from `linkedin/experience.md` and notdefined.dev project data as source material
 3. Apply Core Principles in priority order
 4. Draft content, then self-review against the Review Framework before presenting
 
 When asked to prepare for a specific role or position:
-1. Load `PROFILE.md` + `linkedin/experience.md` + relevant `projects/*.md`
+1. Load `PROFILE.md` + `linkedin/experience.md`; reference notdefined.dev/projects for project detail
 2. Identify which experience and projects best match the target role
 3. Tailor emphasis, not facts — never fabricate or stretch
 
