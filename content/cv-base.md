@@ -14,17 +14,26 @@ Colima, Mexico · rodacato@gmail.com · github.com/rodacato · linkedin.com/in/r
 
 ## Summary
 
-Backend-heavy engineer with 17+ years shipping production systems — fintech, healthcare, eCommerce, and AI infrastructure. Core stack: Ruby/Rails, Node.js, JS/TS, with growing Rust and Python. Designs systems around DDD, hexagonal architecture, and event-driven patterns. Builds AI/LLM tooling, not just uses it.
+Backend-heavy engineer with 17+ years shipping production systems — fintech, healthcare, eCommerce, IoT/telematics, and AI infrastructure. Core stack: Ruby/Rails, Node.js, JS/TS, with Rust in production for real-time device communications. Designs systems around DDD, hexagonal architecture, and event-driven patterns. Builds AI/LLM tooling, not just uses it.
 
 ---
 
 ## Selected Experience
 
-### Monato — Senior Engineer Consultant
-Mar 2025 – Mar 2026
+### Encontrack — Senior Software Engineer (Consultant)
+Jun 2025 – Present · Remote
 
-- Functional DDD with Rails + dry-rb; helped a new team adopt the paradigm
-- Explicit contracts and railway-oriented flows over exception-driven code
+- Core software team for a vehicle-tracking platform (200k+ vehicles) — device-communications and message-processing systems
+- iotHub — Rust processing layer for real-time device communications
+- DeviceManager (Rails) — equipment inventory and command dispatch; led the team
+- Encontrol — React Native apps with a Node/Express backend; lead engineer
+
+### Monato — Senior Engineer Consultant
+Mar 2025 – Mar 2026 · Remote
+
+- Designed a DDD + hexagonal + event-driven architecture; migrated the API V1 → V2 behind a canary proxy for zero-downtime rollout
+- Authored 17 FIPs (Finco Improvement Proposals), establishing a formal technical-proposal process for the team
+- Persisted Event Store for domain events, DI with dry-system, OAuth 2.0 for the V2 API; E2E suite + DevContainer for onboarding
 
 ### Invoy — Senior Full Stack Engineer
 Sep 2019 – Mar 2025 · Irvine, CA (Remote)
