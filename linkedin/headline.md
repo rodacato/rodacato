@@ -4,7 +4,7 @@
 Senior Software Engineer | Ruby, Node.js, APIs & Cloud | Scalable Systems & Architecture
 
 ## Current About
-Senior Software Engineer with 10+ years of experience in scalable, high-performance web applications.
+Senior Software Engineer with 17+ years of experience in scalable, high-performance web applications.
 Expert in Ruby, Javascript, React, API Design, and Cloud Infrastructure (AWS, Terraform, Docker).
 Passionate about performance, security, and maintainability.
 
@@ -17,7 +17,7 @@ I focus on delivering results with high-quality engineering and solid architectu
 
 Summary of Skills & Expertise
 Tech Stack:
-✅ Backend (10+ years): Ruby, Ruby on Rails, Sinatra, API Design (REST & GraphQL), Node.js, Express
+✅ Backend (17+ years): Ruby, Ruby on Rails, Sinatra, API Design (REST & GraphQL), Node.js, Express
 ✅ Frontend (6+ years): JavaScript, React
 ✅ Cloud & DevOps (6+ years): AWS, Terraform, Docker, Heroku, DigitalOcean
 ✅ Databases & Messaging (8+ years): MySQL, PostgreSQL, Redis, RabbitMQ

@@ -14,16 +14,17 @@ Colima, Mexico · rodacato@gmail.com · github.com/rodacato · linkedin.com/in/r
 
 ## Summary
 
-Backend-heavy engineer with 10+ years shipping production systems — fintech, healthcare, eCommerce, and AI infrastructure. Core stack: Ruby/Rails, Node.js, JS/TS, with growing Rust and Python. Designs systems around DDD, hexagonal architecture, and event-driven patterns. Builds AI/LLM tooling, not just uses it. 1,800+ automated tests across current open-source projects.
+Backend-heavy engineer with 17+ years shipping production systems — fintech, healthcare, eCommerce, and AI infrastructure. Core stack: Ruby/Rails, Node.js, JS/TS, with growing Rust and Python. Designs systems around DDD, hexagonal architecture, and event-driven patterns. Builds AI/LLM tooling, not just uses it.
 
 ---
 
 ## Selected Experience
 
 ### Monato — Senior Engineer Consultant
-Mar 2025 – Jun 2025
+Mar 2025 – Mar 2026
 
-<!-- TODO: Add details -->
+- Functional DDD with Rails + dry-rb; helped a new team adopt the paradigm
+- Explicit contracts and railway-oriented flows over exception-driven code
 
 ### Invoy — Senior Full Stack Engineer
 Sep 2019 – Mar 2025 · Irvine, CA (Remote)
@@ -70,10 +71,12 @@ Nov 2010 – Mar 2013 · Guadalajara, Mexico
 
 | Project | What it demonstrates |
 |---------|---------------------|
-| **Stockerly** — Fintech platform (Rails 8, PostgreSQL, dry-rb) | 6 DDD bounded contexts, event-driven market data ingestion, multi-provider API gateways |
-| **SheLLM** — LLM API gateway (Node.js, Express 5) | Dual OpenAI/Anthropic-compatible endpoints, usage tracking, provider health monitoring |
-| **KenoBot** — AI assistant (Node.js, Grammy) | 4-tier cognitive memory system, consciousness gateway, self-improvement via GitHub PRs |
-| **Polyglot Purgatory** — Multi-language monorepo | Python, Rust, Go, TS, Ruby — devcontainer isolation, mentor personas |
+| **Stockerly** — Fintech platform (Rails 8, PostgreSQL, Hotwire) | 6 DDD bounded contexts, event-driven market data ingestion, multi-provider API gateways with circuit breakers |
+| **Dojo** — Anti-vibe-coding practice (React, Hono, PostgreSQL) | Real-time LLM evaluation, monorepo, SonarQube quality gates per workspace |
+| **Drawhaus** — Self-hosted Excalidraw (React, Express, PostgreSQL) | Real-time collaboration over websockets, Kamal + Cloudflare Tunnel deploy |
+| **Mi Feria** — Cycle-aware personal finance (React Native, Expo, Firebase) | Offline-first domain model, mobile release via EAS + OTA |
+
+*Also built: SheLLM (unified LLM REST API), KenoBot (cognitive-memory assistant).*
 
 ---
 
